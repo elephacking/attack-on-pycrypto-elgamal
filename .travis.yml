@@ -5,7 +5,7 @@ python:
 
 
 install:
-  - pip install pycryptodomex
+  - pip install pycrypto
 
 script:
   - python attack_pycrypto.py
