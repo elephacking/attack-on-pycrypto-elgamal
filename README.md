@@ -1,4 +1,4 @@
-# Attack the ElGamal Implementation on PyCrypto
+# Attack on the ElGamal implementation in PyCrypto
 
 Chosen plaintext attack on ElGamal Implementation of PyCrypto
 
