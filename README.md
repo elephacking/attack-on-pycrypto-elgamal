@@ -1,6 +1,11 @@
 # Attack on the ElGamal implementation in PyCrypto
 
-Chosen plaintext attack on the ElGamal implementation in PyCrypto
+*UPDATE:* PyCrypto's implementation does not only allow chosen-plaintext attachs, but also ciphertext-only attacks. In some sense, this is what our source code already does anyways. More precisely, the attacker computes the Legendre symbol of the ciphertext and correlates with the Legendre symbols of the public key and Elgamal's random coin ($g^r$).
+
+
+Here is the original README:
+
+Chosen-plaintext attack on the ElGamal implementation in PyCrypto
 
 All versions of PyCrypto generate weak key parameters. Specifically, Elgamal encryption takes places over Z*_p where the DDH does not hold. By computing the Legendre symbol, the attacker breaks IND-CPA.
 
