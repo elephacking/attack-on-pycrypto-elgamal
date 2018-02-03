@@ -1,6 +1,6 @@
 # Attack on the ElGamal implementation in PyCrypto
 
-*UPDATE:* PyCrypto's implementation does not only allow chosen-plaintext attachs, but also ciphertext-only attacks. In some sense, this is what our source code already does anyways. More precisely, the attacker computes the Legendre symbol of the ciphertext and correlates with the Legendre symbols of the public key and Elgamal's random coin ($g^r$).
+*UPDATE:* PyCrypto's implementation does not only allow chosen-plaintext attacks, but also ciphertext-only attacks. In some sense, this is what our source code already does anyways. More precisely, the attacker computes the Legendre symbol of the ciphertext and correlates with the Legendre symbols of the public key and Elgamal's random coin ($g^r$).
 
 
 Here is the original README:
